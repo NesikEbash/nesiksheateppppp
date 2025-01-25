@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0; /* светло-серый фон */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.chat-container {
+    width: 100%;
+    max-width: 500px;
+    background-color: #ffffff; /* белый фон для чата */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+}
+.chat-header {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+}
+.messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding-right: 10px;
+}
+.message {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #f1f1f1; /* светло-серые сообщения */
+    border-radius: 5px;
+    max-width: 70%;
+}
+.message.user {
+    background-color: #d3d3d3; /* сообщения пользователя */
+    margin-left: auto;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5; /* светлый фон для поля ввода */
+    color: #555;
+}
+input[type="text"]:focus {
+    outline: none;
+    border-color: #888; /* цвет границы при фокусе */
+}
